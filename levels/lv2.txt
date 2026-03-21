@@ -1,0 +1,9 @@
+# Level 2 configuration
+id: 2
+title: Level 2
+description: Start from black and reach white in at most 3 gates.
+target: white
+max_gates: 3
+allowed_gates: I, X
+order: 2
+aliases: 2, lv2, level2

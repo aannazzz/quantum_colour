@@ -1,0 +1,9 @@
+# Playground configuration
+id: playground
+title: Playground
+description: Build any single-qubit circuit you like and inspect the measured colours.
+target: none
+max_gates: 10
+allowed_gates: I, X, Y, Z, H, S, T
+order: 4
+aliases: p, playground

@@ -1,0 +1,9 @@
+# Level 3 configuration
+id: 3
+title: Level 3
+description: Start from black and reach gray, the balanced black/white superposition.
+target: gray
+max_gates: 3
+allowed_gates: I, X, H
+order: 3
+aliases: 3, lv3, level3
