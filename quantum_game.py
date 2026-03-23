@@ -28,7 +28,6 @@ GATES = {
     "Y": np.array([[0, -1j], [1j, 0]], dtype=complex),
     "Z": np.array([[1, 0], [0, -1]], dtype=complex),
     "H": (1 / np.sqrt(2)) * np.array([[1, 1], [1, -1]], dtype=complex),
-    "S": np.array([[1, 0], [0, 1j]], dtype=complex),
     "T": np.array([[1, 0], [0, np.exp(1j * np.pi / 4)]], dtype=complex),
 }
 
@@ -66,7 +65,6 @@ GATE_DESCRIPTIONS = {
     "H": "Hadamard: turn black into an even black/white mix that we call gray.",
     "Y": "Flip with an extra phase twist.",
     "Z": "Phase flip: changes the hidden phase of white.",
-    "S": "Quarter-phase gate.",
     "T": "Eighth-phase gate.",
 }
 
@@ -282,7 +280,7 @@ def extract_quokka_measurements(response_payload) -> List[int]:
     raise ValueError(f"Unexpected Quokka response payload: {response_payload}")
 
 
-def send_to_quokka(program: str, count: int, my_quokka: str = "quokka2") -> List[int]:
+def send_to_quokka(program: str, count: int, my_quokka: str = "quokka1") -> List[int]:
     request_http = f"http://{my_quokka}.quokkacomputing.com/qsim/qasm"
     data = {
         "script": program,

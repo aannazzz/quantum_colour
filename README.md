@@ -66,6 +66,6 @@ python quantum_game.py --level levels/lv3.txt
 
 ## Notes
 
-- Supported gates: `I`, `X`, `Y`, `Z`, `H`, `S`, `T`. (More gates coming in full version)
+- Supported gates: `I`, `X`, `Y`, `Z`, `H`, `T`. (More gates coming in full version)
 - Custom mode accepts `black`, `white`, `gray`, or a ratio like `70/30` for both `--start` and `--target`.
 - Quokka access is required for measurements.

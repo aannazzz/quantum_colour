@@ -4,6 +4,6 @@ title: Playground
 description: Starting from colour black, build any gate combo you like, and see the measured colours.
 target: none
 max_gates: 10
-allowed_gates: I, X, Y, Z, H, S, T
+allowed_gates: I, X, Y, Z, H, T
 order: 4
 aliases: p, playground
